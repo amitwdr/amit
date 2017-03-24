@@ -1,0 +1,328 @@
+Carefully read the question and answer accordingly.
+Consider the following code segment :
+DECLARE
+      TYPE first_rectype IS RECORD (
+         var1 VARCHAR2(100) := 'Hello World');
+      first_rec first_rectype;
+      TYPE second_rectype IS RECORD
+         (nested_rec first_rectype := first_rec);
+      second_rec second_rectype;
+Begin
+ // ----line1
+End
+Which of the following statement can be fitted at ----line1?
+	
+dbms_output.put_line(second_rec); 
+	
+dbms_output.put_line(second_rec.var1); 
+	
+dbms_output.put_line(second_rec.first_rec.var1); 
+	
+dbms_output.put_line(second_rec.nested_rec.var1); 
+	
+dbms_output.put_line(second_rec.nested_rec.first_rec.var1); 
+
+
+
+---------
+Carefully read the question and answer accordingly.
+You are using the system account to create a synonym as follows:
+ Create synonym User for UserDetails
+Which statements are true with respect to the above synonym?
+	
+A synonym with the name UserDetails is created and only system can access it 
+	
+A synonym with the name UserDetails is created and any user can access it 
+	
+A synonym with the name User is created and only system can use it 
+	
+A synonym with the name User is created and any user can access it 
+	
+Incorrect syntax to create a synonym 
+
+-----------
+
+
+Carefully read the question and answer accordingly.
+When a database is created the users SYS and SYSTEM are created automatically and granted the DBA role. State True or False.
+	
+TRUE 
+	
+FALSE 
+----------------
+Carefully read the question and answer accordingly.
+Which method of ServletConfig interface returns a String containing the value of the named initialization parameter, or null if the parameter does not exist?
+	
+getInitParameter(String name) ******
+	
+getParameter() 
+	
+getServletName(String name) 
+	
+getInitParameterName(String name) 
+----------
+Carefully read the question and answer accordingly.
+A filter configuration object used by a servlet container to pass information to a filter during initialization.
+State True or False.
+	
+TRUE *********
+	
+FALSE 
+--------
+Carefully read the question and answer accordingly.
+Mahesh has observed that some users are able to directly access the content files stored in the Web application from the Web browser. Which of the following options should Mahesh use to prevent the users from directly accessing the content files? 
+	
+By storing the content files under the dist directory 
+	
+By storing the content files under the META-INF directory 
+	
+By storing the content files under the WEB-INF directory **********
+	
+By storing the content files under the INF directory 
+--------
+
+
+Carefully read the question and answer accordingly.
+Which of the following can be considered as role(s) of a deployment descriptor in a .war or .ear modules?
+	
+provides security information of the application 
+	
+to provide the configuration details on how the web server should use them to serve the incoming requests 
+	
+to provide listener information to notify certain classes when some events (like session creation) happen 
+	
+has to list down the external API's which are used in the web application 
+--------
+Carefully read the question and answer accordingly.
+Servlet A receives a request that it forwards to servlet B within another web application in the same web container. Servlet A needs to share data with servlet B and that data must not be visible to other servlets in A's web application. In which object can the data that A shares with B be stored?
+	
+HttpSession 
+	
+HttpServletResponse ********
+	
+ServletContext 
+	
+HttpServletRequest 
+---------
+
+
+Carefully read the question and answer accordingly.
+What are the two common exceptions in JAXP?
+1.ParserConfigurationException
+2.FactoryConfigurationException
+3.FactoryConfigurationError
+	
+1&2 
+	
+3 
+	
+1&3 
+	
+1 
+------
+Carefully read the question and answer accordingly.
+You need to store elements in a collection that guarantees that no duplicates are stored and all elements can be accessed in natural order. Which interface provides that capability?
+	
+java.util.Map 
+	
+java.util.Set *********
+	
+java.util.List 
+	
+java.util.Collection 
+------
+Carefully read the question and answer accordingly.
+In the below code, if we declare List interface instead of ArrayList, it would be easier to change any List implementation to store customer details in future. By defining ArrayList here the programmer tightly couples the ArrayList in his application. 
+class CustomerList {
+ ArrayList customerList;
+ public CustomerList(ArrayList list){
+ customerList=list;
+ }
+} 
+	
+TRUE
+	
+FALSE********
+
+---
+Carefully read the question and answer accordingly.
+Which of following are standard JSTL?
+1.http://java.sun.com/jstl/xml/fmt
+2.http://java.sun.com/jstl/core/fmt
+3.http://java.sun.com/jstl/xml
+4.http://java.sun.com/jstl/sql
+5.http://java.sun.com/jstl/core
+	
+1&2&3 
+	
+2&3&4 
+	
+1&2&4 *************
+	
+3&2&5 
+	
+3&4&5 
+
+-----
+Carefully read the question and answer accordingly.
+It is not necessary to implement your own jspInit or jspDestroy methods as they are made available within the base class. Say True or False.
+	
+TRUE ************
+	
+FALSE 
+
+------
+
+Carefully read the question and answer accordingly.
+What are the major areas PMD tool scans java code?
+	
+Coding standards 
+	
+Violation of best practice 
+	
+Possible performance bottlenecks 
+	
+All of the listed options **********
+
+Carefully read the question and answer accordingly.
+Each case in switch statement should end with ________ statement
+	
+default 
+	
+break **********
+	
+continue 
+	
+new 
+	
+none 
+
+---------
+Carefully read the question and answer accordingly.
+Constructor of an class is executed each time when an object of that class is created
+	
+TRUE *******
+	
+FALSE 
+-----------
+Carefully read the question and answer accordingly.
+Serialization is JVM independent.State True or False.
+	
+TRUE ******
+	
+FALSE 
+------
+Carefully read the question and answer accordingly.
+What is the state of the parameters of the PreparedStatement object when the user clicks on the Query button?
+	
+initialized *********
+	
+started 
+	
+paused 
+	
+stopped 
+
+-------
+Carefully read the question and answer accordingly.
+Consider you are developing a JDBC application, where you have to retrieve the Employee information from the database table based on Employee id value passed at runtime as parameter. Which best statement API you will use to execute parameterized SQL statement at runtime?
+	
+Statement 
+	
+PreparedStatement *********
+	
+CallableStatement 
+	
+None of the listed options 
+
+--
+Carefully read the question and answer accordingly.
+Consider the following code snippet:
+   String thought = "Green";
+   StringBuffer bufferedThought = new StringBuffer(thought);
+   String secondThought = bufferedThought.toString();  
+   System.out.println(thought == secondThought);
+Which of the following option gives the output of the above code snippet?
+	
+TRUE 
+	
+FALSE ******
+--------
+
+Carefully read the question and answer accordingly.
+Which of these is not a benefit of Multithreading?
+	
+Reduce response time of process. 
+	
+Support parallel operation of functions. 
+	
+Increase system efficiency. 
+	
+Requires less overheads compared to multitasking. 
+	
+None of the options. 
+------
+
+
+Carefully read the question and answer accordingly.
+If we want to apply a style for a text or a part of a text which tag will be used?
+I: SPAN
+II: DIV
+	
+I *******
+	
+II 
+	
+Both I & II 
+	
+None of the listed options 
+
+------
+Carefully read the question and answer accordingly.
+What are the benefits of Logging? 
+1.Debug applications issues easily
+2.Detect complier errors easily
+3.Trouble Shoot performance problems
+	
+1&2 ********
+	
+2&3 
+	
+1&3 
+	
+3 
+-----
+Carefully read the question and answer accordingly.
+Select the advantages of  using coding conventions in java application development.
+	
+Improves Readability of the software 
+	
+Improves Easy understanding 
+	
+Improves Easy Maintenance 
+	
+All of the listed options *******
+--------
+Carefully read the question and answer accordingly.
+Consider you are creating a JSP page. You want to use the classes of java.util package. Which statement will you use to import the java.util package? 
+	
+<%@ page import="java.util.*" %> *******
+	
+<% page import java.util.* %> 
+	
+<% import="java.util.*" %> 
+	
+<% import java.util.* %>
+
+------
+Carefully read the question and answer accordingly.
+What is meant by case statements in PLSQL?
+	
+The CASE statement selects one sequence of statements to execute. To select the sequence, the CASE statement uses a selector rather than multiple Boolean expressions. A selector is an expression whose value is used to select one of several alternatives 
+	
+The selector is followed by one or more WHEN clauses, which are checked sequentially. The value of the selector determines which clause is executed. If the value of the selector equals the value of a WHEN-clause expression, that WHEN clause is executed *****
+	
+The ELSE clause does not works similarly to the ELSE clause in an IF statement 
+	
+CASE statements can be labeled 
+-
